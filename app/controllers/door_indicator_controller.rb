@@ -21,5 +21,6 @@ class DoorIndicatorController < ApplicationController
     incoming_token = params[:token]
       if incoming_token != token
         render :nothing, status: :bad_request
+      end
   end
 end
